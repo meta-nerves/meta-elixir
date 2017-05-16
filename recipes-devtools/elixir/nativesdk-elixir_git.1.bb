@@ -2,6 +2,7 @@
 # This is the basis of a recipe and may need further editing in order to be fully functional.
 # (Feel free to remove these comments when editing.)
 
+inherit nativesdk
 
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=0c48e31d655fb0e9b1f60b931e652f47"
@@ -18,7 +19,7 @@ SRCREV = "87da507c2428c0aef0917a043be0530d15663046"
 S = "${WORKDIR}/git"
 
 #erlang-compiler for iex
-RDEPENDS_${PN} += "erlang erlang-compiler"
+RDEPENDS_${PN} += " nativesdk-erlang"
 
 do_compile () {
 	# You will almost certainly need to add additional arguments here

@@ -6,7 +6,6 @@ IMAGE_INSTALL = "\
 	      ${CORE_IMAGE_EXTRA_INSTALL} \
 	      packagegroup-erlang-embedded \
 	      elixir \
-	      hello-world-elixir \
 	      "
 
 #		     packagegroup-erlang-embedded \
