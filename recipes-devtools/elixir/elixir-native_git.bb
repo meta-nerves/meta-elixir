@@ -5,20 +5,21 @@
 inherit native
 
 LICENSE = "Apache-2.0"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=0c48e31d655fb0e9b1f60b931e652f47"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=ea2fae57734e78cb8a5ac8244ed8ebdc"
 
 #SRC_URI = "git://github.com/elixir-lang/elixir.git;protocol=https"
-SRC_URI = "git://github.com/elixir-lang/elixir.git;protocol=https;branch=v1.3"
+SRC_URI = "git://github.com/elixir-lang/elixir.git;protocol=https;branch=v1.6"
 
 # Modify these as desired
 #PV = "1.3.0-dev+git${SRCPV}"
 #SRCREV = "${AUTOREV}"
-PV = "1.3.3"
-SRCREV = "87da507c2428c0aef0917a043be0530d15663046"
+PV = "1.6.3"
+SRCREV = "45c7f828ef7cb29647d4ac999761ed4e2ff0dc08"
 
 S = "${WORKDIR}/git"
 
 #erlang-compiler for iex
+DEPENDS += "erlang-native ncurses-native openssl-native"
 RDEPENDS_${PN} += "erlang-native"
 
 do_compile () {
