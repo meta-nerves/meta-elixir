@@ -2,7 +2,6 @@ SUMMARY = "A small image just capable of allowing a device to boot with Elixir a
 
 IMAGE_INSTALL = "\
 	      packagegroup-core-boot \
-	      ${ROOTFS_PKGMANAGE_BOOTSTRAP} \
 	      ${CORE_IMAGE_EXTRA_INSTALL} \
 	      packagegroup-erlang-embedded \
 	      elixir \
