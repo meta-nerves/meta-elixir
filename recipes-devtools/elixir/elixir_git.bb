@@ -7,13 +7,13 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=ea2fae57734e78cb8a5ac8244ed8ebdc"
 
 #SRC_URI = "git://github.com/elixir-lang/elixir.git;protocol=https"
-SRC_URI = "git://github.com/elixir-lang/elixir.git;protocol=https;branch=v1.6"
+SRC_URI = "git://github.com/elixir-lang/elixir.git;protocol=https;branch=v1.7"
 
 # Modify these as desired
 #PV = "1.3.0-dev+git${SRCPV}"
 #SRCREV = "${AUTOREV}"
-PV = "1.6.3"
-SRCREV = "45c7f828ef7cb29647d4ac999761ed4e2ff0dc08"
+PV = "1.7.4"
+SRCREV = "eb5679bfcc9bd35c4c016e91745b4a1a4d43356a"
 
 S = "${WORKDIR}/git"
 
